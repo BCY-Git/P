@@ -1,0 +1,338 @@
+{
+  "subtask_listNoPage": [
+    {
+      "id": 1,
+      "subtaskName": "子任务1"
+    },
+    {
+      "id": 2,
+      "subtaskName": "子任务2"
+    },
+    {
+      "id": 3,
+      "subtaskName": "子四务3"
+    },
+    
+    {
+      "id": 4,
+      "subtaskName": "子任务4"
+    },
+    {
+      "id": 5,
+      "subtaskName": "子任务5"
+    }
+  ],
+  "subtask_listNoPageDetail": [
+    {
+      "id": 1,
+      "taskId": "子任务1",
+      "subtaskName": "行动1",
+      "subtaskType": "1",
+      "startTime": "2025-12-04 10:00:00",
+      "endTime": "2025-12-04 10:00:00",
+      "parentSubtaskId": "null",
+      "siblingSubtaskId": "null",
+      "equipment": "1",
+      "area": "aaa",
+      "createUser": "1",
+      "createTime": "2025-12-04 10:00:00",
+      "updateUser": "1",
+      "updateTime": "2025-12-04 10:00:00"
+    },
+    {
+      "id": 2,
+      "taskId": "子任1",
+      "subtaskName": "行动2",
+      "startTime": "2025-12-04 10:00:00",
+      "endTime": "2025-12-04 10:00:00",
+      "parentSubtaskId": "null",
+      "siblingSubtaskId": "null",
+      "equipment": "1",
+      "area": "aaa",
+      "createUser": "1",
+      "createTime": "2025-12-04 10:00:00",
+      "updateUser": "1",
+      "updateTime": "2025-12-04 10:00:00"
+    }
+  ],
+  "scheme_listNoPage": [
+    {
+      "id": 1,
+      "schemeName": "方案是打算",
+      "planMode": "本席位规划",
+      "scenarioTime": "2025-12-04 10:00:00",
+      "drillId": "47",
+      "auditstatus": 5,
+      "createUser": "1",
+      "createTime": "2025-12-04 10:00:00",
+      "updateUser": "1",
+      "updateTime": "2025-12-04 10:00:00"
+    },
+    {
+      "id": 2,
+      "schemeName": "方大三大四打算",
+      "planMode": "本席位规划",
+      "scenarioTime": "2025-12-04 10:00:00",
+      "drillId": "47",
+      "auditstatus": 1,
+      "createUser": "1",
+      "createTime": "2025-12-04 10:00:00",
+      "updateUser": "1",
+      "updateTime": "2025-12-04 10:00:00"
+    },
+    {
+      "id": 3,
+      "schemeName": "方大三大四打算",
+      "planMode": "本席位规划",
+      "scenarioTime": "2025-12-04 10:00:00",
+      "drillId": "47",
+      "auditstatus": 1,
+      "createUser": "1",
+      "createTime": "2025-12-04 10:00:00",
+      "updateUser": "1",
+      "updateTime": "2025-12-04 10:00:00"
+    },
+    {
+      "id": 4,
+      "schemeName": "方大三大四打算",
+      "planMode": "本席位规划",
+      "scenarioTime": "2025-12-04 10:00:00",
+      "drillId": "47",
+      "auditstatus": 1,
+      "createUser": "1",
+      "createTime": "2025-12-04 10:00:00",
+      "updateUser": "1",
+      "updateTime": "2025-12-04 10:00:00"
+    },
+    {
+      "id": 6,
+      "schemeName": "方大三大四打算",
+      "planMode": "本席位规划",
+      "scenarioTime": "2025-12-04 10:00:00",
+      "drillId": "47",
+      "auditstatus": 0,
+      "createUser": "1",
+      "createTime": "2025-12-04 10:00:00",
+      "updateUser": "1",
+      "updateTime": "2025-12-04 10:00:00"
+    }
+  ],
+  "action_listNoPage": [
+    {
+      "id": 32,
+      "subtaskId": 1,
+      "actionName": "行动4",
+      "actionType": "1",
+      "startTime": "2025-12-04 10:00:00",
+      "endTime": "2025-12-04 10:00:00",
+      "parentActionId": "行动",
+      "siblingActionId": "新的",
+      "equipment": "1",
+      "area": "接口获取的类型区域1",
+      "createUser": "1",
+      "createTime": "2025-12-04 10:00:00",
+      "updateUser": "1",
+      "updateTime": "2025-12-04 10:43:56"
+    },
+    {
+      "id": 31,
+      "subtaskId": 1,
+      "actionName": "行动2",
+      "actionType": "3",
+      "startTime": "2025-12-04 10:00:00",
+      "endTime": "2025-12-04 10:00:00",
+      "parentActionId": "null",
+      "siblingActionId": "null",
+      "equipment": "1",
+      "area": "接口获取的类型区域2",
+      "createUser": "1",
+      "createTime": "2025-12-04 10:00:00",
+      "updateUser": "1",
+      "updateTime": "2025-12-04 10:43:56"
+    },
+    {
+      "id": 33,
+      "subtaskId": 1,
+      "actionName": "行动2",
+      "actionType": "3",
+      "startTime": "2025-12-04 10:00:00",
+      "endTime": "2025-12-04 10:00:00",
+      "parentActionId": "null",
+      "siblingActionId": "null",
+      "equipment": "1",
+      "area": "接口获取的类型区域2",
+      "createUser": "1",
+      "createTime": "2025-12-04 10:00:00",
+      "updateUser": "1",
+      "updateTime": "2025-12-04 10:43:56"
+    }
+  ],
+  "task_nowList": [
+    {
+      "id": 1,
+      "taskName": "任务1",
+      "taskFrom": "上级",
+      "remarks": "任务备注1"
+    }
+  ],
+  "task_details": {
+    "id": "1",
+    "taskName": "任务打算",
+    "taskPurpose": "演练",
+    "taskFrom": "下级",
+    "isCreateByTemplate": "0",
+    "isTemplateData": "0",
+    "type": "2,4,1",
+    "equipment": "2,4,1",
+    "startTime": "2025-01-03T 14:10:00",
+    "endTime": "2025-01-03T 14:30:00",
+    "remasks": "无",
+    "publishStatus": "0",
+    "surroundingsId": "-1",
+    "createUser": "1",
+    "createTime": "2025-03-04T 11:20:00",
+    "updateUser": "1",
+    "updateTime": "2025-03-06T 12:40:31",
+    "terrain": "null",
+    "weather": "3",
+    "seaState": "2",
+    "area": "null",
+    "drillId": "null",
+    "dirllStatus": "null"
+  },
+  "equipPermission_listNoPage": [
+    {
+      "id": 1,
+      "drillId": 23,
+      "modelid": 20,
+      "equipmentName": "设备A",
+      "equipmentNumber": "1",
+      "controlPersonnal": null,
+      "monitoringPersonnalList": []
+    },
+    {
+      "id": 2,
+      "drillId": 27,
+      "modelid": 240,
+      "equipmentName": "设备B",
+      "equipmentNumber": "2",
+      "controlPersonnal": null,
+      "monitoringPersonnalList": []
+    },
+    {
+      "id": 3,
+      "drillId": 243,
+      "modelid": 21,
+      "equipmentName": "设备C",
+      "equipmentNumber": "3",
+      "controlPersonnal": null,
+      "monitoringPersonnalList": []
+    }
+  ],
+  "equipControl_list": [
+    {
+      "id": 1,
+      "modelid": 20,
+      "status": 1,
+      "equipmentName": "设备A",
+      "equipmentNumber": "1",
+      "controlTime": "2025-01-15 10:00:00"
+    },
+    {
+      "modelid": 240,
+      "status": 1,
+      "id": 2
+    },
+    {
+      "modelid": 20,
+      "status": 1,
+      "id": 3
+    },
+    {
+      "modelid": 21,
+      "status": 1,
+      "id": 4
+    }
+  ],
+  "equipControl_listNoPage": [
+    {
+      "id": 1,
+      "modelid": 20,
+      "status": 1,
+      "equipmentName": "设备A",
+      "equipmentNumber": "1",
+      "controlTime": "2025-01-15 10:00:00"
+    }
+  ],
+
+
+
+
+
+
+
+
+  
+  "discern_ListNoPage": [
+    {
+      "id": 1,
+      "discernDataId": 23,
+      "obstacleId": 0,
+      "obstacleHeight": "设备A",
+      "obstacleForm": 0,
+      "comprehensiveObstacleSituation": "",
+      "frontLength": "/images/DJI_0038.jpg",
+      "depthHeight": 0,
+      "mainTexture": 0,
+      "topCutSurfaceWidth": 0,
+      "bottomCutSurfaceWidth": 0,
+      "damageDegree": 0,
+      "remark": "",
+      "type": ""
+    }
+  ],
+  "discern_images": {
+    "status": 0,
+    "msg": "",
+    "data": [
+
+
+      {
+        "id": 1,
+        "drillId": 23,
+        "operator": 20,
+        "operatorName": "设备A",
+        "handler": 0,
+        "handlerName": "答案",
+        "discernImageURL": "/images/DJI_0038.jpg"
+      },
+      {
+        "id": 2,
+        "drillId": 23,
+        "operator": 21,
+        "operatorName": "设备B",
+        "handler": 0,
+        "handlerName": "答案",
+        "discernImageURL": "/images/DJI_0037.jpg"
+      },
+      {
+        "id": 3,
+        "drillId": 23,
+        "operator": 22,
+        "operatorName": "设备C",
+        "handler": 0,
+        "handlerName": "答案",
+        "discernImageURL": "/images/DJI_0036.jpg"
+      },
+      {
+        "id": 4,
+        "drillId": 23,
+        "operator": 23,
+        "operatorName": "设备D",
+        "handler": 0,
+        "handlerName": "答案",
+        "discernImageURL": "/images/DJI_0035.jpg"
+      }
+    ]
+  }
+}
