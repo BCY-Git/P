@@ -360,9 +360,4 @@ const fullScreenStyle = computed(() => ({
 }
 
 
-
-
-
-
-
 </style>
