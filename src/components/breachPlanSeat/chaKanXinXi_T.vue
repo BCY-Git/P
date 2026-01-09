@@ -1,5 +1,5 @@
 <template>
-	<div class="chaKanXinXi-wrapper" :style="overlayStyle">
+	<div class="chaKanXinXi-wrapper" :style="fullScreen ? fullScreenStyle : overlayStyle">
 		<div class="chaKanXinXi-container">
 			<div class="chaKanXinXi-content">
 				<div class="chaKanXinXi-right">
@@ -86,7 +86,8 @@
 							</div>
 							<!-- 按钮区域 -->
 							<div class="chaKanXinXi-buttons">
-								<button class="chaKanXinXi-btn chaKanXinXi-btn-next" @click="handleNext">下一步</button>
+								<button v-if="!hidePrevButton" class="chaKanXinXi-btn chaKanXinXi-btn-next" @click="handleNext">上一步</button>
+								<!-- <button class="chaKanXinXi-btn chaKanXinXi-btn-next" @click="handleNext">下一步</button> -->
 								<button class="chaKanXinXi-btn chaKanXinXi-btn-confirm"
 									@click="handleConfirm">确定</button>
 							</div>
@@ -99,6 +100,18 @@
 </template>
 
 <script setup>
+
+// 定义 props，支持全屏模式和隐藏上一步按钮
+const props = defineProps({
+	fullScreen: {
+		type: Boolean,
+		default: false
+	},
+	hidePrevButton: {
+		type: Boolean,
+		default: false
+	}
+});
 
 const tableData = [
 	{
@@ -148,10 +161,10 @@ import PentagonChart from '@/views/PentagonChart.vue'
 import A from '@/views/A.vue'
 import B from '@/views/B.vue'
 
-const emit = defineEmits(['next', 'close'])
+const emit = defineEmits(['next', 'close', 'prev'])
 
 const handleNext = () => {
-	emit('next')
+	emit('prev')
 }
 
 const handleConfirm = () => {
@@ -171,6 +184,12 @@ onMounted(() => {
 const overlayStyle = computed(() => ({
 	top: headerBottom.value + 'px',
 	height: `calc(100vh - ${headerBottom.value}px - 10px)`
+}))
+
+// 全屏样式
+const fullScreenStyle = computed(() => ({
+	top: '0px',
+	height: '100vh'
 }))
 </script>
 

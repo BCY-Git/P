@@ -2,9 +2,11 @@
 import { ref } from 'vue';
 import yeWuGongJu_T from '@/components/channelCommandSeat/yeWuGongJu_T.vue';
 import Menu_T from '@/components/breachPlanSeat/Menu_T.vue';
+import ChaKanXinXi from '@/components/breachPlanSeat/chaKanXinXi_T.vue';
 const isOpened = ref(false);
 const showSidebar = ref(false);
 const showFooter = ref(false);
+const showChaKanXinXi = ref(false);
 const toggleFooter = () => {
   showFooter.value = !showFooter.value;
 };
@@ -29,6 +31,16 @@ const selectedItemIndex = ref(0);
 // 点击item的处理函数
 const handleItemClick = (index) => {
   selectedItemIndex.value = index;
+};
+
+// 处理查看按钮点击
+const handleView = () => {
+  showChaKanXinXi.value = true;
+};
+
+// 关闭查看信息弹窗
+const handleCloseChaKanXinXi = () => {
+  showChaKanXinXi.value = false;
 };
 
 </script>
@@ -173,8 +185,12 @@ const handleItemClick = (index) => {
       </div>
     </div>
 
-    <yeWuGongJu_T v-if="showSidebar" @close="showSidebar = false" @submit="submit" />
+    <yeWuGongJu_T v-if="showSidebar" @close="showSidebar = false" @submit="submit" @view="handleView" />
 
+    <!-- chaKanXinXi 弹窗 - 使用 Teleport 渲染到 body，避免 z-index 问题 -->
+    <Teleport to="body">
+      <ChaKanXinXi v-if="showChaKanXinXi" :fullScreen="true" :hidePrevButton="true" @close="handleCloseChaKanXinXi" />
+    </Teleport>
   </div>
 </template>
 

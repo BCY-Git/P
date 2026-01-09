@@ -255,6 +255,13 @@ const handleGuiHuaXingDongNext = () => {
   showChaKanXinXiDialog.value = true;
 };
 
+// 处理 chaKanXinXi 的 prev 事件，返回到 guiHuaXingDong
+const handleChaKanXinXiPrev = () => {
+  showChaKanXinXiDialog.value = false;
+  // 立即显示上一个弹窗，不使用延迟
+  showGuiHuaXingDongDialog.value = true;
+};
+
 // 关闭 chaKanXinXi 弹窗
 const closeChaKanXinXiDialog = () => {
   showChaKanXinXiDialog.value = false;
@@ -553,7 +560,7 @@ const handleCancel = () => {
   </Teleport>
   <!-- chaKanXinXi 弹窗 - 使用 Teleport 渲染到 body，避免 z-index 问题 -->
   <Teleport to="body">
-    <chaKanXinXi v-if="showChaKanXinXiDialog" @close="closeChaKanXinXiDialog" />
+    <chaKanXinXi v-if="showChaKanXinXiDialog" @close="closeChaKanXinXiDialog" @prev="handleChaKanXinXiPrev" />
   </Teleport>
 </template>
 

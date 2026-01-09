@@ -3,12 +3,12 @@
         <div class="header-renWuGuiHua-items" :style="itemStyle0">
             <p style="color: white;font-size: 16px;font-weight: bold;">任务管理</p>
         </div>
-        <div class="header-renWuGuiHua-items" style="background-image: url('/PZJHX/jianTou-blue.png');">
+        <div class="header-renWuGuiHua-items" style="background-image: url('/breachPlanSeat/jianTou-blue.png');">
         </div>
         <div class="header-renWuGuiHua-items" :style="itemStyle1">
             <p style="color: white;font-size: 16px;font-weight: bold;">任务分解分配 </p>
         </div>
-        <div class="header-renWuGuiHua-items" style="background-image: url('/PZJHX/jianTou-blue.png');">
+        <div class="header-renWuGuiHua-items" style="background-image: url('/breachPlanSeat/jianTou-blue.png');">
         </div>
         <div class="header-renWuGuiHua-items" :style="itemStyle2">
             <p style="color: white;font-size: 16px;font-weight: bold;">作战规划 </p>

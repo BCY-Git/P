@@ -75,7 +75,7 @@
 
             <div class="button-container"
               style='display: flex;gap: 10px;position: absolute;bottom: 10px;left: 10px;right: 10px;'>
-              <el-button style="flex: 1; ">扎看</el-button>
+              <el-button style="flex: 1; " @click="handleView">查看</el-button>
               <el-button style="flex: 1; ">上报</el-button>
               <el-button  @click="shenYue" style="flex: 1; ">审阅</el-button>
               <el-button @click="handleSubmit" style="flex: 1; ">提交</el-button>
@@ -153,7 +153,7 @@
 import { ref } from 'vue';
 import { Close } from '@element-plus/icons-vue';
 
-const emit = defineEmits(['close', 'submit']);
+const emit = defineEmits(['close', 'submit', 'view']);
 
 const isMinimized = ref(false);
 const isReduced = ref(false);
@@ -176,6 +176,10 @@ const handleClose = () => {
 
 const handleSubmit = () => {
   emit('submit');
+};
+
+const handleView = () => {
+  emit('view');
 };
 </script>
 <style scoped>

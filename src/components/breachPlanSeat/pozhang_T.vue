@@ -294,7 +294,7 @@ async function fetchMindBranches() {
 					<div class="mind-tree" ref="treeRef" style="position: relative; overflow: hidden;">
 						<CornerDecorator borderColor="rgb(120,170,155)" borderWidth="4px" width="8px" height="15px" />
 						<div class="panel-title" style="position: absolute;top: 0;left: 5px;">
-							<span style="display: flex;align-items: center;gap: 5px;"> <img src="/PZJHX/shenPiZhong.png"
+							<span style="display: flex;align-items: center;gap: 5px;"> <img src="/breachPlanSeat/shenPiZhong.png"
 									alt="" style="width: 20px; height: 20px;"> 思维导图</span>
 						</div>
 
